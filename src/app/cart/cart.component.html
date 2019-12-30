@@ -2,6 +2,9 @@
 <p>
   <a routerLink="/shipping">Shipping Prices</a>
 </p>
+
+   <a (click)="ClearCart()">Clear cart</a> 
+
 <div class="cart-item" *ngFor="let item of items">
   <span>{{ item.name }}</span>
   <span>{{ item.price | currency }}</span>
