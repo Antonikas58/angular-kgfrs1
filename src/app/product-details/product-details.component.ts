@@ -9,9 +9,10 @@ import { products } from '../products';
 })
 export class ProductDetailsComponent implements OnInit {
   product;
-  private cartService: CartService
+
   constructor(
-    private route: ActivatedRoute,
+    private cartService: CartService,
+    private route: ActivatedRoute
    
   ) { }
 
